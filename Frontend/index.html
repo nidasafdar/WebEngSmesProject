@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News Accumulator</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="left-part">
+           <img src="logo1.png" alt="logo" class="logo">
+        </div>
+        <div class="right-part">
+            <div class="icons">
+                <i class="fa-solid fa-circle-half-stroke"  id="modeToggle"></i>
+                <i class="fa-solid fa-book-open notebook-icon" id="notes"></i>
+                <div class="popup" id="popup">
+                    <textarea id="noteInput" placeholder="Write your note here..."></textarea>
+                    <button id="saveNote">Save</button>
+                </div>
+            </div>
+
+            <!-- Menu icon for smaller devices -->
+        <div class="menu-icon">
+            <i class="fa-solid fa-bars" id="menuToggle"></i>
+        </div>
+
+            <div class="countries">
+                <ul>
+                    <li><a href="#" id="pakistan">Pakistan</a></li>
+                    <li><a href="#">UK</a></li>
+                    <li><a href="#">India</a></li>
+                    <li><a href="#">Finland</a></li>
+                </ul>
+            </div>
+            <button class="login">Login</button>
+        </div>
+    </header>
+<!--Image slider-->
+    <div class="image-slider">
+        <!-- <div class="slide" style="background-image: url('image1.jpg');"> -->
+            <div class="slider-content">
+                <h1>
+                    See what’s happening<br>
+                    around the world,<br>
+                    anytime.
+                </h1>
+                <button>Explore More</button>
+            </div>
+        </div>
+        <div class="slide" style="background-image: url('image23.webp');"></div>
+        <div class="slide" style="background-image: url('image24.avif');"></div>
+        <div class="slide" style="background-image: url('image1.jpg');"></div>
+        <div class="slide" style="background-image: url('image2.avif');"></div>
+        <div class="dots">
+            <span class="dot" data-index="0"></span>
+            <span class="dot" data-index="1"></span>
+            <span class="dot" data-index="2"></span>
+            <span class="dot" data-index="2"></span>
+        </div>
+    </div>
+
+     <!-- News Section -->
+  <main class="news-grid">
+    <!-- News items will be dynamically added here -->
+  </main>
+
+
+  <footer>
+    <div class="footer-container">
+        <div class="footer-column">
+            <h4>Where To Read</h4>
+            <ul>
+                <li><a href="#">Popular News</a></li>
+                <li><a href="#">Breaking Stories</a></li>
+                <li><a href="#">Regional Updates</a></li>
+            </ul>
+        </div>
+        <div class="footer-column">
+            <h4>Reader Rewards</h4>
+            <ul>
+                <li><a href="#">Join Now</a></li>
+                <li><a href="#">Learn More</a></li>
+                <li><a href="#">Manage Account</a></li>
+            </ul>
+        </div>
+        <div class="footer-column">
+            <h4>News & Updates</h4>
+            <ul>
+                <li><a href="#">Latest Articles</a></li>
+                <li><a href="#">Subscribe to Newsletter</a></li>
+                <li><a href="#">FAQs</a></li>
+                <li><a href="#">Help & Support</a></li>
+            </ul>
+        </div>
+        <div class="footer-column">
+            <h4>Explore More</h4>
+            <ul>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Advertise</a></li>
+                <li><a href="#">Careers</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <div class="footer-country">
+            <button>United States</button>
+        </div>
+        <div class="footer-links">
+            <a href="#">Terms & Conditions</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Accessibility</a>
+        </div>
+        <div class="footer-social">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+    </div>
+</footer>
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>
